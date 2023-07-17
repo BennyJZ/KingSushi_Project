@@ -1,0 +1,515 @@
+/* Black: 1B1A17 rgba(27, 26, 23, 1);
+Yellow-bright: FFD95A
+Yellow-dark: C07F00
+Red: CD1818
+White: F9F5F6 */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    color: #F9F5F6;
+    font-family: Avenir Next, sans-serif;
+    margin: 0;
+
+}
+
+p{
+    margin: 0;
+}
+
+.navBar{
+    transform: translateY(0);
+    position: fixed;
+    width: 100vw;
+    height: 7vw;
+    background: rgba(27, 26, 23, 0.5);
+    transition: transform , 0.3s;
+    z-index: 2;
+}
+
+.navbar.active{
+    transform: translateY(-100px);
+}
+
+/* Buttons */
+.navContent{
+    margin: 4.5% 0 0 0;
+    float: right;
+}
+
+.navBtn{
+    margin-right: 50px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    cursor: pointer;
+    transform: translateY(-10);
+}
+
+.navBtn:hover{
+    color: #F9F5F6;
+    text-decoration: underline;
+    
+}
+
+/* buttons */
+
+
+/* Brand Logo */
+.kNigiri{
+    position: absolute;
+
+    padding: 5px;
+    width: 5vw;
+}
+
+.containerBrand{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 5vw;
+
+}
+/* Brand Lgoo */
+
+
+/* MENU & INTRO */
+
+#menu{
+    background-image: url("images/Restaurant/People/theTeam.JPG");
+    background-size: 100vw;
+    height: 50vw;
+    background-repeat: no-repeat;
+    border-bottom: solid #1B1A17 1rem;
+}
+
+
+.introContainer{
+    position: absolute;
+    background-color: rgba(27, 26, 23, 0.5);
+    top: 10vw;
+    left: 5vw;
+    height: 37vw;
+    width: 90vw;
+
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.introContainer2{
+    position: absolute;
+    background-color: rgba(27, 26, 23, 1);
+    top: 10vw;
+    left: 3vw;
+    height: 37vw;
+    width: 23vw;
+
+    padding: 0 2vw;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+h2.h2Intro{
+    font-size: 2.5vw;
+    margin: 2vw 0 0 0;
+
+}
+
+h3.h3Intro{
+    margin: 1vw 0 0 6vw;
+}
+
+h1.h1Intro{
+    font-size: 7vw;
+    margin: 0 0 0 10vw;
+    text-shadow: 6px 4px 0px rgba(27, 26, 23, 1);
+}
+
+.hours{
+    margin-left: 2vw;
+}
+
+.openingHours{
+    display: inline-block;
+}
+
+
+.menuContainer{
+    position: absolute;
+    top: 40vw;
+    left: 7vw;
+}
+
+/* Wierd AAh Button https://codepen.io/christianjbolus/pen/yLzPvwO or this one https://medium.com/@christianjbolus/how-to-make-a-button-with-a-gradient-border-and-gradient-text-in-html-css-7d495656169 */
+.menuBtn{
+    background: linear-gradient(to right, #C07F00, #FFD95A);
+    cursor: pointer;
+    font-size: 1.5vw;
+    font-family: Avenir Next, sans-serif;
+    padding: 1vw 3vw;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    color: rgb(200, 200, 200);
+    transition: color 200ms;
+
+}
+
+.menuIcon:hover{
+    color: rgba(27, 26, 23, 1);
+}
+
+.menuBtn:hover{
+    color: rgba(27, 26, 23, 1);
+
+}
+
+.menuBtn::before{
+    content:"";
+    background-color: rgba(27, 26, 23, 1);
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    top: 1px;
+    bottom:1px;
+
+    border-radius: 5px;
+    margin: 3px;
+    transition: 200ms;
+
+    z-index: -1;
+
+
+}
+
+
+.menuBtn:hover:before{
+    right: 175px;
+    left: 1px;
+    top: 1px;
+    bottom:1px;
+
+
+}
+
+/* CAROUSEL */
+#carou{
+    background-color: rgba(27, 26, 23, 1);
+}
+
+.carousel{
+    width: 98vw;
+    height: 15vw;
+    position:relative;
+
+}
+
+
+
+
+.slide{
+    position: absolute;
+    width: 18vw;
+    transition: all 200ms;
+    border: solid rgba(27, 26, 23, 1) 1rem;
+}
+
+.slideDiv{
+    .outerRight{
+        right: 1vw;
+    }
+
+    .innerRight{
+        right: 21vw;
+
+    }
+
+    .outerLeft{
+        left: 1vw;
+    }
+
+    .innerLeft{
+        left: 21vw;
+
+    }
+
+    .center{
+        left: 41vw;
+        
+    }
+
+}
+
+
+.slideDiv:hover{
+
+    .outerRight{
+        right: 4vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .innerRight{
+        right: 18vw;
+        width: 22vw;
+        transform: translateY(-2vh);
+        z-index: 1;
+        /* z-index is necessary, the picters are stacked liked cards, outer right being the highest "card" */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .outerLeft{
+        left: 4vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .innerLeft{
+        left: 18vw;
+        width: 22vw;
+        transform: translateY(-2vh);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .center{
+        left: 35vw;
+        width: 30vw;
+        transform: translateY(-6vh);
+        z-index: 2;
+        /* Same reason as for outerRight */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+
+    transition: all 200ms;
+
+}
+
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 5vw;
+    transform: translateY(-50%);
+
+    color: rgba(27, 26, 23, 1);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+}
+
+.carousel-button{
+    background-color: rgba(200, 200, 200, 1);
+    font-size: 5vw;
+    transition: font-size 200ms;
+
+}
+
+.carousel-button:hover{
+    font-size: 6vw;
+
+}
+
+
+.carousel-button.prev{
+    background: linear-gradient( to right, rgba(27, 26, 23, 0.5), rgba(200, 200, 200, 0.5));
+    left: 2rem;
+}
+
+.carousel-button.next{
+    background: linear-gradient( to left, rgba(27, 26, 23, 0.5), rgba(200, 200, 200, 0.5));
+    right: 2rem;
+}
+
+
+/* CHEF INTRODUCTION CARDS */
+
+#chefs{
+    background-color: rgba(27, 26, 23, 1);
+}
+
+.chefRed{
+    background: linear-gradient( to bottom right, rgba(27, 26, 23, 1) 70%, #cd1818);
+    width: 99vw;
+    height: 150vh;
+    border-radius: 4rem;
+    z-index: -1;
+
+}
+
+
+.chefCards{
+    background-color: rgba(27, 26, 23, 1);
+    width: 98vw;
+    height: 147vh;
+    border-radius: 4rem;
+
+}
+
+.nirmal:hover, .sushil:hover{
+    .cardText{
+        transform: translateY(-4vh);
+    }
+    .theCardCorner{
+        height: 51vh;
+    }
+}
+
+h1.chefTitle{
+    font-size: 4vw;
+    margin: 0 0 0 10vw;
+}
+
+.chef{
+    width: 20vw;
+    border-radius: 0 25%;
+}
+
+.cardContainer{
+    display: inline-block;
+    margin-right: 15vw;
+    margin-left: 10vw;
+    margin-top: 4vh;
+}
+
+.theCardCorner{
+    position: absolute;
+    display: inline-block;
+    width: 25vw;
+    height: 55vh;
+    border-radius: 10% 25%;
+    /* border-radius: 25% 10%; */
+    background: linear-gradient( to bottom right, rgba(27, 26, 23, 1) 70%, #cd1818);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* SPECIAL CODE: box-shadow from w3schools*/
+    margin-left: -8vw;
+    margin-top: 15vw;
+    transition: height 200ms;
+
+}
+
+.cardText{
+    width: 24vw;
+    height: 50vh;
+    border-radius: 10% 25%;
+    /* border-radius: 25% 10%; */
+    background: rgba(27, 26, 23, 1);
+    transition: transform 200ms;
+
+}
+
+.foodoraWolt{
+    margin: 35vh 0 0 33vw;
+    font-size: 20;
+}
+
+.foodContainer{
+    display: inline-block;
+    margin: 0 0 0 25vw;
+
+}
+
+
+.food{
+    width: 10vw;
+    transition: all 200ms;
+}
+
+.food:hover{
+    box-shadow: 0 4px 8px 0 rgba(205, 24, 24, 0.2), 0 6px 20px 0 rgba(205, 24, 24, 0.19);
+    border-radius: 100%;
+    transform: translateY(-5%);
+    cursor: pointer;
+
+}
+
+.foodora{
+    color: #e11367;
+
+}
+
+.wolt{
+    color: #4db2e1;
+}
+
+#address{
+    background-color: rgba(27, 26, 23, 1);
+    width: 99vw;
+    height: 95vh;
+}
+
+iframe{
+    display: inline-block;
+    margin: 20vh 0 0 10vw;
+    width: 40vw;
+    height: 60vh;
+    box-shadow: 0 4px 2rem 0 rgba(205, 24, 24, 0.25), 0 6px 20px 0 rgba(205, 24, 24, 0.2);
+    border-radius: 10%;
+}
+
+.theCardCornerMap{
+    position: absolute;
+    display: inline-block;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 10% 25%;
+    /* border-radius: 25% 10%; */
+    background: linear-gradient( to bottom right, rgba(27, 26, 23, 1) 70%, #cd1818);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* SPECIAL CODE: box-shadow from w3schools*/
+    transition: height 200ms;
+    margin: 20vh 0 0 12vw;
+
+}
+
+.cardTextMap{
+    width: 24vw;
+    height: 55vh;
+    border-radius: 10% 25%;
+    /* border-radius: 25% 10%; */
+    background: rgba(27, 26, 23, 1);
+    transition: transform 200ms;
+
+}
+.cardTextMap:hover{
+    transform: translateY(-4vh);
+}
+.theCardCornerMap:hover{
+    height: 56vh;
+}
+
+/* FOOTER */
+
+#footer{
+    background: rgba(27, 26, 23, 1);
+    width: 99vw;
+    height: 20vh;
+}
+
+.footerGold{
+    background:linear-gradient(to right, #C07F00, #FFD95A);
+    width: 99vw;
+    height: 1vh;
+
+}
+
+.credit{
+    padding: 8px;
+    display: inline-block;
+    margin: 10vh 0 0 40vw;
+    color: #cd1818;
+    border: none;
+    transition: all 200ms;
+}
+
+.credit:hover{
+    box-shadow: 0 4px 2rem 0 rgba(205, 24, 24, 0.25), 0 6px 20px 0 rgba(205, 24, 24, 0.2);
+    border-radius: 15px;
+    transform: translateY(-10%);
+    cursor: pointer;
+}
