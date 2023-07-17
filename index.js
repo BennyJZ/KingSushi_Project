@@ -2,16 +2,35 @@
 var scrolltop = 0;
 window.addEventListener("scroll", ()=>{
     let scrolly = window.scrollY;
-     if (scrolly > 50){
+    console.log(window.scrollY);
+
+    // This if function activates the navbar, after 50px, and then it goes up and/or down depending on scroll diraction
+    if (scrolly > 50){
         if (scrolly > scrolltop){
-            document.querySelector(".navBar").classList.add("active");
+        document.querySelector(".navBar").classList.add("active");
         } else {
-            document.querySelector(".navBar").classList.remove("active");
-     }
+        document.querySelector(".navBar").classList.remove("active");
+        }
     }
+
+    if(scrolly > 700){ //Here is the menu button pop up thingy
+        document.querySelector(".menuPopUpPosContainer").classList.add("popUpActive");
+    }else{
+        document.querySelector(".menuPopUpPosContainer").classList.remove("popUpActive");
+    }
+
      scrolltop = scrolly;
+
+    if((window.innerHeight + Math.round(window.scrollY)+25) >= document.body.offsetHeight){
+        document.querySelector(".menuPopUpPosContainer").classList.add("hitBot");
+
+    } else if ((window.innerHeight + Math.round(window.scrollY)) < document.body.offsetHeight){
+        document.querySelector(".menuPopUpPosContainer").classList.remove("hitBot");
+
+    }
 });
 //////////////////////////////////////////////////
+
 
 // CAROUSEL
 
@@ -48,5 +67,15 @@ buttons.forEach ((button) =>{
         }
 
 
+    });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });

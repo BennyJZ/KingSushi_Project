@@ -11,18 +11,29 @@
     </head>
 
     <body>
+        <div class="menuPopUpPosContainer">
+            <div class="menuPopUpPos">
+                <div class="menuPopUpTxt">
+                    <i class="fa-solid fa-bell-concierge menuPopUp" style="color: #F9F5F6;"></i>
+                </div>
+                
+            </div>
+            <div class="vl"></div>
+        </div>
+
         <!-- NAVBAR SECTION -->
         <section id="navBar">
             <div class="navBar">
 
                 <div class="containerBrand">
-                    <img class="kNigiri" src="/images/Assets/KS_logo2.png"></img>
+                    <a href="#menu"><img class="kNigiri" src="/images/Assets/KS_logo2.png"></img></a>
                 </div>
 
                 <div class="navContent">
-                    <a class="navBtn" href="#">About Us</a>
-                    <a class="navBtn" href="#">Get in Touch</a>
-                    <a class="navBtn" href="#">Find Us</a>
+                    <a class="navBtn" href="#chefs">About Us</a>
+                    <a class="navBtn" href="#delivery"><span class="foodora">Food</span> <span class="wolt">Delivery</span></a>
+                    <a class="navBtn" href="#address">Find Us</a>
+                    <a class="navBtn" href="#contact">Contact Us</a>
                 </div>
 
             </div>
@@ -30,10 +41,10 @@
 
 
         <!-- INTRO & MENU SECTION -->
-        <section id="Menu">
-
+        <section id="menu">
+            <div class="menu"></div>
                 <div class="menuContainer">
-                    <button class="menuBtn">See Menu <i class="fa-solid fa-bell-concierge"></i></button>
+                    <button class="menuBtn">The Menu <i class="fa-solid fa-bell-concierge"></i></button>
                 </div>
 
                 <div class="introContainer">
@@ -115,6 +126,7 @@
 
         <!-- chefs, chefRed, chefCards are just the aesthetic red in the corner. It goes black -> Red ->black -->
         <section id="chefs">
+
             <div class="chefRed">
                 <div class="chefCards"> 
                     <div>
@@ -122,38 +134,43 @@
                             Meet our Chefs
                         </h1>
                     </div>
- 
 
                     <div class="nirmal cardContainer">
                         <img class="chef" src="images/Restaurant/People/Chef1.JPG">
-                        <div class="theCardCorner"> 
-                            <div class="cardText"> <h3>Lorem ipsum dolor</h3> On a treacharous journey through the Himalayas, Nirmal was introduced the ancient arts of Sushi. Being particularly gifted in the ways of the blade, he came to creations like no other.
-                          </div>
-
+                        <div class="cardPos">
+                            <div class="theCardCorner"> 
+                                <div class="cardText"> <h3>Chef Nirmal</h3> Trained by himalayan monkeys and chinese tigers, Nirmal found his way to the art of Sushi. Ever since his shifu's passing Nirmal has been carrying his Shifu's teachings and seeks to avenge his master.
+                                    <p> "ouuu Ouu AH AAAHH" -Shifu</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="sushil cardContainer">
-                    <img class="chef" src="images/Restaurant/People/Chef2.JPG">
-                        <div class="theCardCorner">
-                            <div class="cardText"> <h3>Lorem ipsum dolor</h3> Sushil, the sushi connoseiur, knows exactly what wierd and wacky combinations of Maki, that would suit every pallete.
+                        <img class="chef" src="images/Restaurant/People/Chef2.JPG">
+                        <div class="cardPos">
+                            <div class="theCardCorner">
+                                <div class="cardText"> <h3>Chef Sushil</h3> Smitten by the infinite possibilities of Sushi, Sushil vowed to master every combination of fish known to man. Fighting for the title of Sushil: Master of Pallete Town.
+                                </div>
                             </div>
-                            
                         </div>
                     </div> 
 
-                    <div class="foodoraWolt">
+                    <div id="delivery" class="foodoraWolt">
                         <h2> We have <span class="foodora">Foodora</span> & <span class="wolt">Wolt</span> Deilvery!</h2>
                     </div>
-                    <div class="foodContainer">
-                        <img class="food" src="images/Assets/Foodora_Logo.png">
 
-                    </div>
-                    <div class="foodContainer">
-                        <img class="food" src="images/Assets/wolt_logo.png">
+                    <a href="https://www.foodora.no/en/restaurant/a713/king-sushi-and-wok" target="_blank">
+                        <div class="foodContainer">
+                            <img class="food" src="images/Assets/Foodora_Logo.png">
+                        </div>
+                    </a>
 
-                    </div>
-
+                    <a href="https://wolt.com/en/nor/oslo/restaurant/king-sushi-wok" target="_blank">
+                        <div class="foodContainer">
+                            <img class="food" src="images/Assets/wolt_logo.png">
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -161,18 +178,70 @@
 
         <section id="address">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1570419866264!2d10.758472586259133!3d59.91294100870715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e5fc6db694f%3A0xc65319cc0de7f718!2sGr%C3%B8nland%2030%2C%200188%20Oslo!5e0!3m2!1sen!2sno!4v1689548397457!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-            <div class="theCardCornerMap">
 
-                <div class="cardTextMap">
-                    <h3>Lorem ipsum dolor</h3> Sushil, the sushi connoseiur, knows exactly what wierd and wacky combinations of Maki, that would suit every pallete.
+            <a href="https://goo.gl/maps/Vyae3T7Gnx6vYqXJ9" target="_blank">
+                <div class="redBlkCard_Map">
+                    <div class="theCardCorner">
+                        <div class="cardText">
+                            <h3>Address: King Sushi</h3> 
+                            Grønland Gate 20, 0188 Oslo
+
+                            <div class="introTxt">
+
+                                <p>
+                                    <hr>
+                                    <strong>Opening Hours: </strong>
+                                </p>
+        
+                                <div class="openingHours">
+                                    <ul>
+                                        <li>
+                                            Mon-Thurs: 
+                                        </li>
+                                        <li>
+                                            Fri-Sat: 
+                                        </li>
+                                        <li>
+                                            Sun: 
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="openingHours">
+                                    <p>11-22</p>
+                                    <p>11-24</p>
+                                    <p>12-21</p>
+        
+                                </div>
+
+                                <p>Spørsmål? Ta kontakt med nummeret nede</p>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
+            </a>
 
         </section>
 
+        <section id="contact">
+            <div class="contactCard">
 
+               <a class="navBtn" href="tel: +4796958077"> 
+                    <div class="redBlkCard_Contact">
+                        <div class="theCardCornerContact">
+                            <div class="cardTextContact">
+                                <h1 class="OnP">Order & Pick Up</h1>
+                                <img class="kingNigiri" src="/images/Assets/KS_logo2.png"></img>
+                                <hr>
+                                <h2>King Sushi:</h2>
+                                <h2><i class="fa-solid fa-phone phoneIcon" style="color: #F9F5F6;"></i> +47 988 21 728</h2>
+
+                            </div>
+                        </div> 
+                    </div>
+                </a>
+            </div>
+        </section>
+
+ 
 
 
         <script src="index.js"></script>
@@ -182,7 +251,7 @@
         <div id="footer">
             <div class="footerGold">
             </div>
-            <p class="credit">Made By: Benny Jan Zhuang</p>
+            <a href="https://www.bennyjz.com" target="_blank" onclick="window.open('www.bennyjz.com','width=200px,height=200px')"><p class="credit">Made By: Benny JZ <img class="wKong" src="images/Assets/Wukong_Staff.png"> </p></a>
 
         </div>
 
